@@ -1,0 +1,7 @@
+---
+- name: Reiniciar servicio X
+  hosts: linux
+  tasks:
+    - name: Reinicio servicio X
+      shell: systemctl restart ufw
+      become: true
